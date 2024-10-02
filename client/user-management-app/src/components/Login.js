@@ -41,8 +41,15 @@ const Login = ({ onLoginSuccess }) => {
                         <Input.Password placeholder="Password" className="mb-4" />
                     </Form.Item>
                     <Form.Item>
-                        <Button type="primary" htmlType="submit" loading={loading} className="w-full">
+                        <Button type="primary" htmlType="submit" loading={loading} className="w-full mb-2">
                             Login
+                        </Button>
+                        <Button 
+                            type="link" 
+                            onClick={() => history.push('/register')} 
+                            style={{ width: '100%', textAlign: 'center' }}
+                        >
+                            Don't have an account? Register here
                         </Button>
                     </Form.Item>
                 </Form>
